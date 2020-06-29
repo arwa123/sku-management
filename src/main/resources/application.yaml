@@ -1,0 +1,21 @@
+logging:
+  level:
+    ROOT: INFO
+    com.company: INFO
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  servlet:
+    context-path: '/sku-service/api'
+  port: 8084
+
+
+    
